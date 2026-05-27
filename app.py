@@ -45,7 +45,7 @@ def gestionar_peritajes():
              return jsonify({"error": "Falta la placa"}), 400
          
          nuevo_peritaje = {
-             "placa": datos.get('placa'),
+             "placa": datos.get('placa').upper(),
              "estado": datos.get("estado", "ingresado"),
              "mecanico": datos.get("mecanico", "por asignar")
          }
