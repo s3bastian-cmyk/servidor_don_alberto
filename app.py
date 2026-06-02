@@ -29,7 +29,6 @@ def get_registros():
 
 @app.route('/api/inventario', methods=['GET'])
 def inventario(): 
-    error_provocado = 1 / 0
     return jsonify({
         "repuestos": [
             "llantas",
